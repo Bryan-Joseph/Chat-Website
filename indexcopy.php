@@ -81,6 +81,14 @@
                     <div class="form-inline mt-3">
                         <input name="sendInputBox" class="mx-1" placeholder="Enter message">
                         <input type="submit" class="btn btn-success" name="sendButton" value="Send">
+
+                        <script>
+                            function abcdefg() {
+                                window.location.href = window.location.href ;
+                            }
+                        </script>
+
+                        <button onclick="abcdefg()" class="btn btn-primary ml-1">Check for new messages</button>
                     </div>
                 </div>
             </form>

@@ -29,7 +29,7 @@
     }
 
     </script>
-    <body>
+    <body class="bg-primary">
         <form action="indexcopy.php" method="GET" style="text-align: center;margin-top: 50px;">
             <div class="form-group">
                 <label for="name">Name :</label>
