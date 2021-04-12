@@ -19,7 +19,7 @@
         var rooms = document.getElementsByName("room").value
     </script>-->
 
-    <script>
+    <!--<script>
         function subDeal(){
             const name = document.getElementById("name").value ;
             const room = document.getElementById("room").value ;    
@@ -28,7 +28,7 @@
             sessionStorage.setItem("ROOM",room);
     }
 
-    </script>
+    </script>-->
     <body class="bg-primary">
         <form action="indexcopy.php" method="GET" style="text-align: center;margin-top: 50px;">
             <div class="form-group">
@@ -41,7 +41,7 @@
             </div>
             <div class="form-group">
                 
-                <input type="submit" onclick="subDeal()" class="btn btn-success" name="enterButton" value="Enter room">
+                <input type="submit" class="btn btn-success" name="enterButton" value="Enter room">
                
             </div>
             <hr>

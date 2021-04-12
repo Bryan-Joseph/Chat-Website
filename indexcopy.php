@@ -4,7 +4,7 @@
 ?> 
 <html>
 	<head>
-		<title>Login</title>
+		<title>Chat Website</title>
 		<!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -17,26 +17,35 @@
 
         
 	</head>
-    <script>
+    <!--<script>
         function get(){
-            const a = sessionStorage.getItem("NAME");
-            const b = sessionStorage.getItem("ROOM");
+            //const a = sessionStorage.getItem("NAME");
+            //const b = sessionStorage.getItem("ROOM");
+
+            const ab = (new URL(window.location)).search;
+            const b = ab.get('room');
 
             document.getElementById("roomID").innerHTML = b ;
+
+            const a = ab.get('name');
+
+          
             document.getElementById("nameID").innerHTML = a ;
+
+
         }
 
-</script>
+</script>-->
     <body class="bg-primary" style="text-align:center;" onload="get()">
         <div>
             <div class="m-5 bg-white">
                 <h2  id="namessssss"></h2>
                 <h3>Name is :</h3>
-                <h2 id="nameID"></h2>
+                <h2 id="nameID"><?php echo $_GET["name"] ?></h2>
             </div>
             <div class="m-5 bg-white">
                 <h3>Room number is :</h3>
-                <h2 id="roomID"></h2>
+                <h2 id="roomID"><?php echo $_GET["room"] ?></h2>
             </div>
         </div>
         
